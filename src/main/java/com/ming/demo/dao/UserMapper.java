@@ -48,5 +48,5 @@ public interface UserMapper {
      */
     int updateByPrimaryKey(User record);
     User selectUserByUserName(String username);
-    User selectUserByUserNameAndPassword(@Param("username") String username,@Param("password") String password);
+    List<User> selectUserByUserNameAndPassword(@Param("username") String username,@Param("password") String password);
 }
